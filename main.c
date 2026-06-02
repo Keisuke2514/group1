@@ -1,8 +1,8 @@
 #include<stdio.h>
+#include"logic.h"
 
 int main(void){
-    int que = 0;
-    int cor = 0;
+    id = lord_cards("date.csv",problem,1024);
     int menu;
 
 
@@ -11,23 +11,23 @@ int main(void){
         scanf("%d",&menu);
 
         if(menu == 1){
-            //kannsuu
+            createproblem();
         }
 
         else if(menu == 2){
-            printf("");
+            //kannsuu
         }
 
         else if(menu == 3){
-            printf("");
+            //kannsuu
         }
 
         else if(menu == 4){
-            printf("");
+            viewploblem();
         }
 
         else{
-            printf("1～3の数字を入力してください");
+            printf("1～4の数字を入力してください");
         }
     }
 }
