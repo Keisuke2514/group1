@@ -1,19 +1,19 @@
-#•Ï”‚ÌÝ’è
-CC = gcc		#ƒRƒ“ƒpƒCƒ‰
-CFLAGS = -Wall		#ŒxƒIƒvƒVƒ‡ƒ“
-TARGET = bin/Memorization-app.exe		#o—Íƒtƒ@ƒCƒ‹–¼
+#å¤‰æ•°ã®è¨­å®š
+CC = gcc		#ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©
+CFLAGS = -Wall		#è­¦å‘Šã‚ªãƒ—ã‚·ãƒ§ãƒ³
+TARGET = bin/Memorization-app.exe		#å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«å
 OBJS = obj/main.o obj/logic.o obj/storage.o
 
-#ƒrƒ‹ƒhƒ‹[ƒ‹
+#ãƒ“ãƒ«ãƒ‰ãƒ«ãƒ¼ãƒ«
 $(TARGET):$(OBJS)
 		@if not exist bin mkdir bin
 		$(CC) -o $@ $^
 
-#ƒRƒ“ƒpƒCƒ‰ƒ‹[ƒ‹
+#ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©ãƒ«ãƒ¼ãƒ«
 obj/%.o:%.c logic.h storage.h
 	@if not exist obj mkdir obj
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-#íœƒ‹[ƒ‹
+#å‰Šé™¤ãƒ«ãƒ¼ãƒ«
 clean:
 	-rmdir /s /q bin obj
