@@ -1,33 +1,33 @@
 #include<stdio.h>
+#include"logic.h"
 
 int main(void){
-    int que = 0;
-    int cor = 0;
+    id = lord_cards("date.csv",problem,1024);
     int menu;
 
 
     while(1){
-        printf("ƒƒjƒ…[\n1:ì–â    2:—ûK    3:ƒeƒXƒg  4:–â‘èˆê——\n");
+        printf("ï¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼ï¼\n1:ä½œå•    2:ç·´ç¿’    3:ãƒ†ã‚¹ãƒˆ  4:å•é¡Œä¸€è¦§\n");
         scanf("%d",&menu);
 
         if(menu == 1){
-            //kannsuu
+            createproblem();
         }
 
         else if(menu == 2){
-            printf("");
+            //kannsuu
         }
 
         else if(menu == 3){
-            printf("");
+            //kannsuu
         }
 
         else if(menu == 4){
-            printf("");
+            viewploblem();
         }
 
         else{
-            printf("1`3‚Ì”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+            printf("1ï½4ã®æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
         }
     }
 }
