@@ -7,3 +7,5 @@ extern int id=0;
     char answer[1024];
  }Problem;
  Problem problem[1024];
+ 
+ #endif
