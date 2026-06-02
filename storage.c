@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "logic.h"
 
-int load_cards(const char *path, problem *list, int max)
+int load_cards(const char *path, Problem *list, int max)
 {
     FILE *fp = fopen(path, "r");
 
@@ -37,7 +37,7 @@ int load_cards(const char *path, problem *list, int max)
 }
 
 
-int save_cards(const char *path, problem *list, int count)
+int save_cards(const char *path, Problem *list, int count)
 {
     FILE *fp = fopen(path, "w");
 

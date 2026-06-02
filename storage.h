@@ -3,7 +3,7 @@
 
 #include "logic.h"
 
-int load_cards(const char *path, problem *list, int max);
-int save_cards(const char *path, problem *list, int count);
+int load_cards(const char *path, Problem *list, int max);
+int save_cards(const char *path, Problem *list, int count);
 
 #endif
