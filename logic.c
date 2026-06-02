@@ -9,3 +9,11 @@ void createproblem(){
     scanf("%s",&problem[id].answer);
     id++;
 }
+
+void viewproblem(){
+    for(int x=0;x>=id;x++){
+        printf("%d:",problem[id].id);
+        printf("%s",problem[id].question);
+        printf("\n%s\n\n",problem[id].answer);
+    }
+}

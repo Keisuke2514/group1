@@ -1,1 +1,4 @@
-test
+*.exe
+*.o
+bin/
+obj/
