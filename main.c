@@ -3,31 +3,33 @@
 
 int main(void){
     id = lord_cards("date.csv",problem,1024);
-    int menu;
-
 
     while(1){
-        printf("＝メニュー＝\n1:作問    2:練習    3:テスト  4:問題一覧\n");
-        scanf("%d",&menu);
+        int menu;
 
-        if(menu == 1){
-            createproblem();
-        }
+        menu = ui();
 
-        else if(menu == 2){
-            //kannsuu
-        }
+        switch(menu)
+        {
+            case 0:
+                createproblem();
+                break;
 
-        else if(menu == 3){
-            //kannsuu
-        }
+            case 1:
+                practice(id);
+                break;
 
-        else if(menu == 4){
-            viewploblem();
-        }
+            case 2:
+                test(id);
+                break;
 
-        else{
-            printf("1～4の数字を入力してください");
+            case 3:
+                problemlist(id);
+                break;
+
+            case 4:
+                printf("プログラムを終了します");
+                return 0;
         }
-    }
+    }   
 }
