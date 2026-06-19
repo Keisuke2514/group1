@@ -4,6 +4,10 @@
 #include<string.h>
 #include<time.h>
 
+int id = 0;
+Problem problem[1024];
+char answer[1024];
+
 void createproblem(){
     problem[id].id=id+1;
     printf("問題を入力:");
@@ -48,7 +52,7 @@ void test(int max){
         }
         count++;
     }
-    printf("正解数 %d/%d",right,answer);
+    printf("正解数 %d/%d",right,max);
 }
 
 void problemlist(int max){
