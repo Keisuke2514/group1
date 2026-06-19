@@ -5,29 +5,25 @@ int main(void){
     id = lord_cards("date.csv",problem,1024);
     int menu;
 
+    menu = ui();
 
-    while(1){
-        printf("＝メニュー＝\n1:作問    2:練習    3:テスト  4:問題一覧\n");
-        scanf("%d",&menu);
+    switch(menu)
+    {
+        case 0:
+            printf("問題作成\n");
+            break;
 
-        if(menu == 1){
-            createproblem();
-        }
+        case 1:
+            printf("練習\n");
+            break;
 
-        else if(menu == 2){
-            //kannsuu
-        }
+        case 2:
+            printf("テスト\n");
+            break;
 
-        else if(menu == 3){
-            //kannsuu
-        }
-
-        else if(menu == 4){
-            viewploblem();
-        }
-
-        else{
-            printf("1～4の数字を入力してください");
-        }
+        case 3:
+            printf("問題一覧\n");
+            break;
     }
+    
 }
