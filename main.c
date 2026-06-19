@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<windows.h>
 #include"logic.h"
 #include"storage.h"
 #include"ui.h"
