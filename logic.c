@@ -36,10 +36,10 @@ void test(int max){
     int count=0;
     int right=0;
     srand((unsigned)time(NULL));
-    for(int i;i<5;i++){
+    for(int i=0;i<5;i++){
         r=rand()%max;
         printf("%s:",problem[r].question);
-        scanf("%s",&answer);
+        scanf("%1023s",answer);
         if(strcmp(answer,problem[r].answer)){
             printf("正解!\n");
             right++;

@@ -6,8 +6,8 @@ extern int id;
     char question[1024];
     char answer[1024];
  }Problem;
- Problem problem[1024];
- char answer[1024];
+ extern Problem problem[1024];
+ extern char answer[1024];
 
  void createproblem(void);
 void practice(int id);
