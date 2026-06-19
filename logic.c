@@ -1,14 +1,15 @@
 #include "logic.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include<string.h>
 #include<time.h>
 
 void createproblem(){
     problem[id].id=id+1;
     printf("問題を入力:");
-    scanf("%s",&problem[id].question);
+    scanf("%1023s",problem[id].question);
     printf("答えを入力:");
-    scanf("%s",&problem[id].answer);
+    scanf("%1023s",problem[id].answer);
     id++;
 }
 
@@ -17,8 +18,8 @@ void practice(int max){
     int count=0;
     int right=0;
     for(int i=0;i<max;i++){
-        printf("%s:",problem[i].question);
-        scanf("%s",&answer);
+        printf("%1023s:",problem[i].question);
+        scanf("%1023s",answer);
         if(strcmp(answer,problem[i].answer)){
             printf("正解!\n");
             right++;
@@ -27,7 +28,7 @@ void practice(int max){
         }
         count++;
     }
-    printf("正解数 %d/%d",right,answer);
+    printf("正解数 %d/%d",right,max);
 }
 
 void test(int max){
