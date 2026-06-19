@@ -2,7 +2,7 @@
 CC = gcc		#コンパイラ
 CFLAGS = -Wall		#警告オプション
 TARGET = bin/Memorization-app.exe		#出力ファイル名
-OBJS = obj/main.o obj/logic.o obj/storage.o
+OBJS = obj/main.o obj/logic.o obj/storage.o obj/ui.o
 
 #ビルドルール
 $(TARGET):$(OBJS)
