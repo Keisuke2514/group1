@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include"logic.h"
+#include"ui.h"
 
 int main(void){
-    id = lord_cards("date.csv",problem,1024);
+    id = load_cards("date.csv",problem,1024);
 
     while(1){
         int menu;

@@ -1,6 +1,6 @@
 #ifndef LOGIC_H
 #define LOGIC_H
-extern int id=0;
+extern int id;
  typedef struct{
     int id;
     char question[1024];
