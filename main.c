@@ -36,6 +36,7 @@ int main(void){
 
             case 4:
                 printf("プログラムを終了します");
+                save_cards("date.csv",problem,id);
                 return 0;
         }
     }   
