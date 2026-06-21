@@ -24,7 +24,7 @@ void practice(int max){
     for(int i=0;i<max;i++){
         printf("%1023s:",problem[i].question);
         scanf("%1023s",answer);
-        if(strcmp(answer,problem[i].answer)){
+        if(strcmp(answer,problem[i].answer)==0){
             printf("正解!\n");
             right++;
         }else{
@@ -36,15 +36,22 @@ void practice(int max){
 }
 
 void test(int max){
+    int qnumber=5;
+    if(max<qnumber)qnumber=max;//問題が5問以下の時問題数をテストにする
+    srand((unsigned)time(NULL));
     int r;
     int count=0;
     int right=0;
-    srand((unsigned)time(NULL));
-    for(int i=0;i<5;i++){
-        r=rand()%max;
+    int list[1024];
+    for(int x=0;x<max;x++){
+        list[x]=x;
+    }
+    shuffle(list,max);
+    for(int i=0;i<qnumber;i++){
+        r=list[i];
         printf("%s:",problem[r].question);
         scanf("%1023s",answer);
-        if(strcmp(answer,problem[r].answer)){
+        if(strcmp(answer,problem[r].answer)==0){
             printf("正解!\n");
             right++;
         }else{
@@ -58,5 +65,14 @@ void test(int max){
 void problemlist(int max){
     for(int i=0;i<max;i++){
         printf("%s\n",problem[i].question);
+    }
+}
+
+void shuffle(int a[], int n) {
+    for (int i = n - 1; i > 0; i--) {
+        int j = rand() % (i + 1);
+        int tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
     }
 }

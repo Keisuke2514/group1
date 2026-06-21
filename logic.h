@@ -9,9 +9,9 @@ extern int id;
  extern Problem problem[1024];
  extern char answer[1024];
 
- void createproblem(void);
+void createproblem(void);
 void practice(int id);
 void test(int id);
 void problemlist(int max);
-
+void shuffle(int a[], int n);
  #endif
