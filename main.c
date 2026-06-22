@@ -14,7 +14,7 @@ int main(void){
     while(1){
         int menu;
 
-        menu = ui();    //menuにui()のposを代入
+        menu = ui();    //menuにui()のposを代入している
 
         switch(menu)
         {
