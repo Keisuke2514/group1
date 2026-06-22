@@ -23,18 +23,35 @@ int main(void){
                 break;
 
             case 1:
-                practice(id);
+                if(id!=0)practice(id);
+                else{
+                    printf("問題がありません");
+                    getchar();
+                }
                 break;
 
             case 2:
-                test(id);
+                if(id!=0)test(id);
+                else{
+                    printf("問題がありません");
+                    getchar();
+                }
                 break;
 
             case 3:
-                problemlist(id);
+                if(id!=0)problemlist(id);
+                else{
+                    printf("問題がありません");
+                    getchar();
+                }
                 break;
 
             case 4:
+                if(id!=0)delete();
+                else{
+                    printf("問題がありません");
+                    getchar();
+                }
                 break;
 
             case 5:

@@ -82,6 +82,9 @@ void shuffle(int a[], int n) {
     }
 }
 
-void reset(){
-    memset(&problem, 0, sizeof(problem));
+void delete(){
+    memset(problem, 0, sizeof(problem));
+    id=0;
+    printf("削除成功");
+    getchar();
 }
