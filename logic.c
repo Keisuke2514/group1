@@ -22,7 +22,7 @@ void practice(int max){
     int count=0;
     int right=0;
     for(int i=0;i<max;i++){
-        printf("%1023s:",problem[i].question);
+        printf("%s:",problem[i].question);
         scanf("%1023s",answer);
         if(strcmp(answer,problem[i].answer)==0){
             printf("正解!\n");
@@ -33,6 +33,8 @@ void practice(int max){
         count++;
     }
     printf("正解数 %d/%d",right,max);
+    getchar();
+    getchar();
 }
 
 void test(int max){
@@ -60,12 +62,15 @@ void test(int max){
         count++;
     }
     printf("正解数 %d/%d",right,max);
+    getchar();
+    getchar();
 }
 
 void problemlist(int max){
     for(int i=0;i<max;i++){
         printf("%s\n",problem[i].question);
     }
+    getchar();
 }
 
 void shuffle(int a[], int n) {
