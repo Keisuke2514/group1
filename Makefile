@@ -10,7 +10,7 @@ $(TARGET):$(OBJS)
 		$(CC) -o $@ $^
 
 #コンパイラルール
-obj/%.o:%.c logic.h storage.h
+obj/%.o:%.c logic.h storage.h ui.h
 	@if not exist obj mkdir obj
 	$(CC) $(CFLAGS) -c -o $@ $<
 
