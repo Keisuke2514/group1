@@ -81,3 +81,7 @@ void shuffle(int a[], int n) {
         a[j] = tmp;
     }
 }
+
+void reset(){
+    memset(&problem, 0, sizeof(problem));
+}
