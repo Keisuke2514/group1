@@ -14,7 +14,7 @@ int main(void){
     while(1){
         int menu;
 
-        menu = ui();
+        menu = ui();    //menuにui()のposを代入
 
         switch(menu)
         {
@@ -35,6 +35,9 @@ int main(void){
                 break;
 
             case 4:
+                break;
+
+            case 5:
                 printf("プログラムを終了します");
                 save_cards("date.csv",problem,id);
                 return 0;
