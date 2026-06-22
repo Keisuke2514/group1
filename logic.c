@@ -28,7 +28,7 @@ void practice(int max){
             printf("正解!\n");
             right++;
         }else{
-            printf("不正解\n");
+            printf("不正解\t正解:%s\n",problem[i].answer);
         }
         count++;
     }
