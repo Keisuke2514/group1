@@ -45,6 +45,7 @@ void test(int max){
     int count=0;
     int right=0;
     int list[1024];
+    int buf;
     for(int x=0;x<max;x++){
         list[x]=x;
     }
@@ -61,7 +62,9 @@ void test(int max){
         }
         count++;
     }
-    printf("正解数 %d/%d",right,max);
+    if(max>5)buf=5;
+    else buf=max;
+    printf("正解数 %d/%d",right,buf);
     getchar();
     getchar();
 }
